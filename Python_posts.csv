@@ -1,0 +1,486 @@
+Post Number,Title,Text
+11fio85,"We are the developers behind pandas, currently preparing for the 2.0 release :) AMA","Hello everyone!
+
+I'm Patrick Hoefler aka phofl and I'm one of the core team members developing and maintaining pandas ([repo](https://github.com/pandas-dev/pandas), [docs](https://pandas.pydata.org/docs/dev/index.html)), a popular data analysis library.
+
+This AMA will be at least joined by
+
+* [Marc Garcia](https://github.com/datapythonista) \-- maintainer
+* [Marco Gorelli](https://github.com/marcogorelli), -- maintainer
+* [Richard Shadrach](https://github.com/rhshadrach) \-- maintainer
+* [me](https://github.com/phofl)! -- maintainer
+
+**The official start time for the AMA will be 5:30pm UTC on March 2nd**, before then this post will exist to collect questions in advance. Since most of us live all over North America and Europe, **it's likely we'll answer questions before & after the official start time by a significant margin**.
+
+**pandas** is a Python package that provides fast, flexible, and expressive data structures designed to make working with ""relational"" or ""labeled"" data both easy and intuitive. It aims to be the fundamental high-level building block for doing practical, **real world** data analysis in Python. Additionally, it has the broader goal of becoming **the most powerful and flexible open source data analysis / manipulation tool available in any language**.
+
+We will soon celebrate our 2.0 release. We released the release candidate for 2.0 last week, so the actual release is expected shortly, possibly next week. Please help us in testing that everything works through [testing the rc](https://github.com/pandas-dev/pandas/releases/tag/v2.0.0rc0) :)
+
+Ask us anything! Post your questions and upvote the ones you think are the most important and should get our replies.
+
+\- Patrick, on behalf of the team
+
+&#x200B;
+
+&#x200B;
+
+Marc:
+
+I'm Marc Garcia (username datapythonista), pandas core developer since 2018, and current release manager of the project. I work on pandas part time paid by the funds the project gets from grants and sponsors. And I'm also consultant, advising data teams on how to work more efficiently. I sometimes write about pandas and technical topics at my [blog](https://datapythonista.me/blog/), and I speak at Python and open source conferences regularly. You can connect with me via [LinkedIn](https://www.linkedin.com/in/datapythonista/), [Twitter](https://twitter.com/datapythonista) and [Mastodon](https://fosstodon.org/@datapythonista).
+
+Marco:
+
+I'm Marco, one of the devs from the AMA. I work on pandas as part of my job at Quansight, and live in the UK. I'm mostly interested in time-series-related stuff
+
+Patrick:
+
+I'm Patrick and part of the core team of pandas. Part of my daytime job allows me to contribute to pandas, I am based in Germany. I am currently mostly working on Copy-on-Write, a new feature in pandas 2.0. (check my [blog-post](https://medium.com/towards-data-science/a-solution-for-inconsistencies-in-indexing-operations-in-pandas-b76e10719744) or our new [docs](https://pandas.pydata.org/docs/dev/user_guide/copy_on_write.html) for more information).
+
+Richard:
+
+I work as a Data Scientist at [84.51](https://www.8451.com/) and am a core developer of pandas. I work mostly on groupby within pandas.
+
+\--
+
+* [Announcement post](https://www.reddit.com/r/Python/comments/11ebuh0/join_us_for_an_ama_with_the_developers_of_pandas/)
+* [full pandas team](https://pandas.pydata.org/about/team.html)
+* [Marc wrote about pandas 2.0 and our Arrow support](https://datapythonista.me/blog/pandas-20-and-the-arrow-revolution-part-i)"
+1cy9vpt,Speed improvements in Polars over Pandas,"I'm giving a talk on polars in July. It's been pretty fast for us, but I'm curious to hear some examples of improvements other people have seen. I got one process down from over three minutes to around 10 seconds.   
+Also curious whether people have switched over to using polars instead of pandas or they reserve it for specific use cases. "
+12ahvyk,Pandas 2.0 Released,[https://pandas.pydata.org/docs/dev/whatsnew/v2.0.0.html](https://pandas.pydata.org/docs/dev/whatsnew/v2.0.0.html)
+1byhpm7,Do folks ever use Pandas when they should use SQL?,"I think I see this a lot.
+
+I believe SQL, including like dataframe SQL packages, should always be used over Pandas when possible unless one is doing something Pandas is more suited to or unless someone requires broader Python control structures or features.
+
+I am a big believer in sticking to SQL as a baseline data manipulation framework and only using other frameworks if SQL is lacking. One of the biggest ways to accumulate technical debt is solving problems in multiple ways that are not standardized that not all people know."
+1do71es,GeoPandas 1.0 released!,"A good 10 years after it's first 0.1 release, GeoPandas just tagged their 1.0 release!
+
+* Release page: [https://github.com/geopandas/geopandas/releases/tag/v1.0.0](https://github.com/geopandas/geopandas/releases/tag/v1.0.0)
+* Changelog: [https://geopandas.org/en/latest/docs/changelog.html](https://geopandas.org/en/latest/docs/changelog.html)
+* 1.0 tracking issue: [https://github.com/geopandas/geopandas/issues/3201](https://github.com/geopandas/geopandas/issues/3201)
+* 1.0 milestone: [https://github.com/geopandas/geopandas/milestone/4?closed=1](https://github.com/geopandas/geopandas/milestone/4?closed=1)
+
+*About GeoPandas*
+
+>GeoPandas is an open source project to make working with geospatial data in python easier. GeoPandas extends the datatypes used by [pandas](http://pandas.pydata.org/) to allow spatial operations on geometric types. Geometric operations are performed by [shapely](https://shapely.readthedocs.io/). Geopandas further depends on [pyogrio](https://pyogrio.readthedocs.io/) for file access and [matplotlib](http://matplotlib.org/) for plotting."
+10mezt9,Pandas Illustrated. The Definitive Visual Guide to Pandas.,
+lain0r,"Hey Reddit, here's my comprehensive course on Python Pandas, for free.","The course is called [Python Pandas For Your Grandpa](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa/) - So easy your grandpa could learn it. (It's the successor to [Python NumPy For Your Grandma](https://www.gormanalysis.com/blog/python-numpy-for-your-grandma/).)
+
+## Course Curriculum
+1. **Introduction**  
+  [1.1 Introduction](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-1-1-introduction)  
+2. **Series**  
+  [2.1 Series Creation](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-1-series-creation)  
+  [2.2 Series Basic Indexing](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-2-series-basic-indexing)  
+  [2.3 Series Basic Operations](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-3-series-basic-operations)  
+  [2.4 Series Boolean Indexing](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-4-series-boolean-indexing)  
+  [2.5 Series Missing Values](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-5-series-missing-values)  
+  [2.6 Series Vectorization](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-6-series-vectorization)  
+  [2.7 Series `apply()`](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-7-series-apply)  
+  [2.8 Series View vs Copy](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-8-series-view-vs-copy)  
+  [2.9 Challenge: Baby Names](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-9-challenge-baby-names)  
+  [2.10 Challenge: Bees Knees](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-10-challenge-bees-knees)  
+  [2.11 Challenge: Car Shopping](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-11-challenge-car-shopping)  
+  [2.12 Challenge: Price Gouging](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-12-challenge-price-gouging)  
+  [2.13 Challenge: Fair Teams](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-2-13-challenge-fair-teams)  
+3. **DataFrame**  
+  [3.1 DataFrame Creation](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-1-dataframe-creation)  
+  [3.2 DataFrame To And From CSV](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-2-dataframe-to-and-from-csv)  
+  [3.3 DataFrame Basic Indexing](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-3-dataframe-basic-indexing)  
+  [3.4 DataFrame Basic Operations](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-4-dataframe-basic-operations)  
+  [3.5 DataFrame `apply()`](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-5-dataframe-apply)  
+  [3.6 DataFrame View vs Copy](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-6-dataframe-view-vs-copy)  
+  [3.7 DataFrame `merge()`](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-7-dataframe-merge)  
+  [3.8 DataFrame Aggregation](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-8-dataframe-aggregation)  
+  [3.9 DataFrame `groupby()`](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-9-dataframe-groupby)  
+  [3.10 Challenge: Hobbies](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-10-challenge-hobbies)  
+  [3.11 Challenge: Party Time](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-11-challenge-party-time)  
+  [3.12 Challenge: Vending Machines](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-12-challenge-vending-machines)  
+  [3.13 Challenge: Cradle Robbers](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-13-challenge-cradle-robbers)  
+  [3.14 Challenge: Pot Holes](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-3-14-challenge-pot-holes)  
+4. **Advanced**  
+  [4.1 Strings](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-1-strings)  
+  [4.2 Dates And Times](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-2-dates-and-times)  
+  [4.3 Categoricals](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-3-categoricals)  
+  [4.4 MultiIndex](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-4-multiindex)  
+  [4.5 DataFrame Reshaping](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-5-dataframe-reshaping)  
+  [4.6 Challenge: Class Transitions](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-6-challenge-class-transitions)  
+  [4.7 Challenge: Rose Thorn](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-7-challenge-rose-thorn)  
+  [4.8 Challenge: Product Volumes](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-8-challenge-product-volumes)  
+  [4.9 Challenge: Session Groups](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-9-challenge-session-groups)  
+  [4.10 Challenge: OB-GYM](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-4-10-challenge-ob-gym)  
+5. **Final Boss**  
+  [5.1 Challenge: COVID Tracing](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-5-1-challenge-covid-tracing)  
+  [5.2 Challenge: Pickle](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-5-2-challenge-pickle)  
+  [5.3 Challenge: TV Commercials](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-5-3-challenge-tv-commercials)  
+  [5.4 Challenge: Family IQ](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-5-4-challenge-family-iq)  
+  [5.5 Challenge: Concerts](https://www.gormanalysis.com/blog/python-pandas-for-your-grandpa-5-5-challenge-concerts)  
+
+Alternatively, view my [YouTube playlist for the course here](https://www.youtube.com/playlist?list=PL9oKUrtC4VP7ry0um1QOUUfJBXKnkf-dA). 
+
+If you find this useful, please consider liking, subscribing, and sharing. It means a lot. You wouldn't believe how much effort went into creating this course. 
+
+Thanks!"
+upbhyh,Pandas Tutor - visualize Python pandas code,
+dnrp3b,Pandas got a new logo,
+11e99a2,pandas 2.0 and the Arrow revolution,
+196jbms,Modern alternatives to Data Science Libraries like Polars with Pandas?,"I've been trying Polars and love them more than Pandas. In addition to performance, I find the API better designed (fewer ways to do the same thing) which, I think, allows memorizing the syntax faster, I would recommend Polars instead of Pandas to a new person.
+
+Are there any modern alternatives for data visualization, algorithms, etc. that you are considering as an upgrade to your stack?"
+xidxvz,Pandas 1.5 released,
+q8fdfp,"""Give me one example of something you can do in pandas that you can't do in excel""",My friend the other day at work. He just got fired
+10a2tjg,Why Polars uses less memory than Pandas,
+zybjx8,I made a subreddit specifically for pandas!,"Hey all,
+
+You can check it out here. Pandas conversation is a bit diffuse across a few subreddits, so i thought i'd aggregate here. 
+
+https://old.reddit.com/r/dfpandas/comments/zyb9wk/welcome_to_dfpandas/"
+td9fzp,I made a video tutorial about speeding up slow pandas code. I wish I had known this when I first learned python and pandas.,
+1andqab,Why is pandas not compiled with -o3 by deafualt?,"Is it just me or does that seem simply bizzar. 
+Like if you have gcc u can just get so much extra speed from doing that simple trick and as far as I can tell from their cython setup they don't seem to... 
+
+Why is that?"
+f4oaag,"Bank statement analyzer GUI with pandas, matplotlib and PyQt5",
+120mci9,pandas 2.0 is coming out soon,"pandas 2.0 will come out soon, probably as soon as next week. The (hopefully) final release candidate was published last week.
+
+&#x200B;
+
+I wrote about a couple of interesting new features that are included in 2.0:
+
+* non-nanosecond Timestamp resolution
+* PyArrow-backed DataFrames in pandas
+* Copy-on-Write improvement
+
+[https://medium.com/gitconnected/welcoming-pandas-2-0-194094e4275b](https://medium.com/gitconnected/welcoming-pandas-2-0-194094e4275b)"
+p98nmh,When Excel fails you. How to load 2.8 million records with Pandas,"Hey I'm back again with another quick and easy Python data tutorial loading 2.8 million records with Python and Pandas overcoming the Excel row limit.
+
+https://youtu.be/nDixZvbhQZQ
+
+I also encounter two additional errors with this one that we overcome. 1) Delimiter of the CSV being tab and 2) UTF-8 encoding error.
+
+Feedback always welcome. Thanks for your ongoing support."
+tjodin,"LPT: Pandas DataFrames have a ""to_clipboard"" method","For those that don't know, Pandas has very useful to_clipboard and read_clipboard methods that make it easy to drop a DataFrame into an Excel sheet or to move it across python sessions without having to read and write CSV files. This is really useful for me and I hope it will help you too!"
+12fgyui,Pandas 2.0 (with pyarrow) vs Pandas 1.3 - Performance Comparison,
+12hixyi,Pandas or Polars to work with dataframes?,"I've been working with Pandas long time ago and recently I noticed that Pandas 2.0.0 was released ([https://pandas.pydata.org/docs/dev/whatsnew/v2.0.0.html](https://pandas.pydata.org/docs/dev/whatsnew/v2.0.0.html))   
+However, I see lots of people pointing up that the (almost new) library Polars is much faster than Pandas.  
+I also did 2 analyses on this and it looks like Polars is faster:  
+1- [https://levelup.gitconnected.com/pandas-vs-polars-vs-pandas-2-0-fight-7398055372fb](https://levelup.gitconnected.com/pandas-vs-polars-vs-pandas-2-0-fight-7398055372fb)  
+2- [https://medium.com/gitconnected/pandas-vs-polars-vs-pandas-2-0-round-2-e1b9acc0f52f](https://medium.com/gitconnected/pandas-vs-polars-vs-pandas-2-0-round-2-e1b9acc0f52f)  
+
+
+What is your opinion on this? Do you like more Polars?  
+Do you think Pandas 2.0 will decrease the time difference between Pandas and Polars?"
+xkjs92,Storing Pandas data frames efficiently in Python,
+vuznid,"Why should I choose Anaconda if I can install pandas, numpy and jupyter notebook already in Python?","No shade towards people behind Anaconda but all I see is it is just Python that comes with things like Pandas, Numpy and Jupyter Notebook built in. What special will Anaconda do that I cannot already achieve in base Python?
+
+It may be necessary for Math professors who do not feel it being their part of the job to setup development environment and want to go straight to coding. But for us folks who know how to use pip, what practical benifit does Anaconda bring?"
+x4u928,Level up your Pandas skills with query() and eval(),
+n8l35m,Iterating though Pandas DataFrames efficiently,
+13pjzsz,Polars vs. Pandas in 2023,"Need to switch from r-data.table to Python in my new job. 
+
+Is polars ready for prime time? Should I study it as a replacement for my previous API or *pandas* will still be the standard in 2023-2024-2025? 
+
+I would say I never used the most advanced features of data.table. 99% of the time is pivoting/groupby/filter/aggregations"
+12b7w3y,Everything you need to know about pandas 2.0.0!,"Pandas 2.0.0 is finally released after 2 RC versions. As a developer of Xorbits, a distributed pandas-like system, I am really excited to share some of my thoughts about pandas 2.0.0!
+
+Let's lookback at the history of pandas, it took over ten years from its birth as version 0.1 to reach version 1.0, which was released in 2020. The release of pandas 1.0 means that the API became stable. And the release of pandas 2.0 is definitly **a revolution in performance**.
+
+This reminds me of Python’s creator Guido’s plans for Python, which include a series of PEPs focused on performance optimization. **The entire Python community is striving towards this goal**.
+
+# Arrow dtype backend
+
+One of the most notable features of Pandas 2.0 is its **integration with Apache Arrow**, a unified in-memory storage format. Before that, Pandas uses Numpy as its memory layout. Each column of data was stored as a Numpy array, and these arrays were managed internally by BlockManager. However, Numpy itself was not designed for data structures like DataFrame, and there were some limitations with its support for certain data types, such as strings and missing values.
+
+In 2013, Pandas creator Wes McKinney gave a famous talk called “10 Things I Hate About Pandas”, most of which were related to performance, some of which are still difficult to solve. Four years later, in 2017, McKinney initiated Apache Arrow as a co-founder. This is why Arrow’s integration has become the most noteworthy feature, as it is designed to work seamlessly with Pandas. Let’s take a look at the improvements that Arrow integration brings to Pandas.
+
+## Missing values
+
+Many pandas users must have experienced data type changing from integer to float implicitly. That's because pandas automatically converts the data type to float when missing values are introduced during calculation or include in original data:
+
+```python
+In [1]: pd.Series([1, 2, 3, None])
+Out[1]:
+0    1.0
+1    2.0
+2    3.0
+3    NaN
+dtype: float64
+```
+
+Missing values has always been a pain in the ass because there're different types for missing values. `np.nan` is for floating-point numbers. `None` and `np.nan` are for object types, and `pd.NaT` is for date-related types.In Pandas 1.0, `pd.NA` was introduced to to avoid type conversion, but it needs to be specified manually by the user. Pandas has always wanted to improve in this part but has struggled to do so.
+
+The introduction of Arrow can solve this problem perfectly:
+```
+In [1]: df2 = pd.DataFrame({'a':[1,2,3, None]}, dtype='int64[pyarrow]')
+
+In [2]: df2.dtypes
+Out[2]:
+a    int64[pyarrow]
+dtype: object
+
+In [3]: df2
+Out[3]:
+      a
+0     1
+1     2
+2     3
+3  <NA>
+```
+
+## String type
+Another thing that Pandas has often been criticized for is its ineffective management of strings.
+
+As mentioned above, pandas uses Numpy to represent data internally. However, Numpy was not designed for string processing and is primarily used for numerical calculations. Therefore, a column of string data in Pandas is actually a set of PyObject pointers, with the actual data scattered throughout the heap. This undoubtedly increases memory consumption and makes it unpredictable. This problem has become more severe as the amount of data increases.
+
+Pandas attempted to address this issue in version 1.0 by supporting the experimental `StringDtype` extension, which uses Arrow string as its extension type. Arrow, as a columnar storage format, stores data continuously in memory. When reading a string column, there is no need to get data through pointers, which can avoid various cache misses. This improvement can bring significant enhancements to memory usage and calculation.
+
+```python
+In [1]: import pandas as pd
+
+In [2]: pd.__version__
+Out[2]: '2.0.0'
+
+In [3]: df = pd.read_csv('pd_test.csv')
+
+In [4]: df.dtypes
+Out[4]:
+name       object
+address    object
+number      int64
+dtype: object
+
+In [5]: df.memory_usage(deep=True).sum()
+Out[5]: 17898876
+
+In [6]: df_arrow = pd.read_csv('pd_test.csv', dtype_backend=""pyarrow"", engine=""pyarrow"")
+
+In [7]: df_arrow.dtypes
+Out[7]:
+name       string[pyarrow]
+address    string[pyarrow]
+number      int64[pyarrow]
+dtype: object
+
+In [8]: df_arrow.memory_usage(deep=True).sum()
+Out[8]: 7298876
+```
+
+As we can see, without arrow dtype, a relatively small DataFrame takes about 17MB of memory. However, after specifying arrow dtype, the memory usage reduced to less than 7MB. This advantage becomes even more significant for larg datasets. In addition to memory, let’s also take a look at the computational performance:
+
+```python
+In [9]: %time df.name.str.startswith('Mark').sum()
+CPU times: user 21.1 ms, sys: 1.1 ms, total: 22.2 ms
+Wall time: 21.3 ms
+Out[9]: 687
+
+In [10]: %time df_arrow.name.str.startswith('Mark').sum()
+CPU times: user 2.56 ms, sys: 1.13 ms, total: 3.68 ms
+Wall time: 2.5 ms
+Out[10]: 687
+```
+
+**It is about 10x faster with arrow backend**! Although there are still a bunch of operators not implemented for arrow backend, the performance improvement is still really exciting.
+
+# Copy-on-Write
+Copy-on-Write (CoW) is an optimization technique commonly used in computer science. Essentially, when multiple callers request the same resource simultaneously, CoW avoids making a separate copy for each caller. Instead, each caller holds a pointer to the resource until one of them modifies it.
+
+So, what does CoW have to do with Pandas? In fact, the introduction of this mechanism is not only about improving performance, but also about usability. Pandas functions return two types of data: a copy or a view. A copy is a new DataFrame with its own memory, and is not shared with the original DataFrame. A view, on the other hand, shares the same data with the original DataFrame, and changes to the view will also affect the original. Generally, indexing operations return views, but there are exceptions. Even if you consider yourself a Pandas expert, it’s still possible to write incorrect code here, which is why manually calling copy has become a safer choice.
+
+```python
+In [1]: df = pd.DataFrame({""foo"": [1, 2, 3], ""bar"": [4, 5, 6]})
+
+In [2]: subset = df[""foo""]
+
+In [3]: subset.iloc[0] = 100
+
+In [4]: df
+Out[4]:
+   foo  bar
+0  100    4
+1    2    5
+2    3    6
+```
+
+In the above code, subset returns a view, and when you set a new value for subset, the original value of df changes as well. If you’re not aware of this, all calculations involving df could be wrong. To avoid problem caused by view, pandas has several functions that force copying data internally during computation, such as `set_index`, `reset_index`, `add_prefix`. However, this can lead to performance issues. Let’s take a look at how CoW can help:
+
+```python
+In [5]: pd.options.mode.copy_on_write = True
+
+In [6]: df = pd.DataFrame({""foo"": [1, 2, 3], ""bar"": [4, 5, 6]})
+
+In [7]: subset = df[""foo""]
+
+In [7]: subset.iloc[0] = 100
+
+In [8]: df
+Out[8]:
+   foo  bar
+0    1    4
+1    2    5
+2    3    6
+```
+
+With CoW enabled, rewriting subset data triggers a copy, and modifying the data only affects subset itself, leaving the df unchanged. This is more intuitive, and avoid the overhead of copying. In short, users can safely use indexing operations without worrying about affecting the original data. This feature systematically solves the somewhat confusing indexing operations and provides significant performance improvements for many operators.
+
+# One more thing
+When we take a closer look at Wes McKinney’s talk, “10 Things I Hate About Pandas”, we’ll find that there were actually 11 things, and the last one was **No multicore/distributed algos**.
+
+The Pandas community focuses on improving single-machine performance for now. From what we’ve seen so far, Pandas is entirely trustworthy. The integration of Arrow makes it so that competitors like Polars will no longer have an advantage.
+
+On the other hand, people are also working on distributed dataframe libs. [Xorbits Pandas](https://xorbits.io/), for example, has rewritten most of the Pandas functions with parallel manner. This allows Pandas to utilize multiple cores, machines, and even GPUs to accelerate DataFrame operations. With this capability, even data on the scale of 1 terabyte can be easily handled. Please check out the [benchmarks results](https://xorbits.io/benchmark) for more information.
+
+Pandas 2.0 has given us great confidence. As a framework that introduced Arrow as a storage format early on, Xorbits can better cooperate with Pandas 2.0, and we will work together to build a better DataFrame ecosystem. In the next step, we will try to use Pandas with arrow backend to speed up Xorbits Pandas!
+
+Finally, please follow us on [Twitter](https://twitter.com/Xorbitsio) and [Slack](https://join.slack.com/t/xorbitsio/shared_invite/zt-1o3z9ucdh-RbfhbPVpx7prOVdM1CAuxg) to connect with the community!"
+oz5erv,I created an Excel Add-in to generate Pandas Dataframes right inside Excel,"I am working as a Data Analyst. In many cases, the Excel Files I am dealing with are pretty 'messy'. Often the Excel files are containing headers, comments, additional (unnecessary or blank) columns.
+
+If I want to perform analysis using the pandas library, first I need to transform the Excel file into a pandas DataFrame using 'pandas.read\_excel(""ExcelFile.xlsx"")'. Pandas offers different parameters to read in 'messy' Excel files, such as *usecols*, *skiprows*, *nrows*, etc.
+
+Yet, I found it tedious always to specify those arguments if I just want to perform a quick analysis. That is why I have created an Excel Add-In, which does all the tiresome work. As shown in the gif below, after I select the data I want to transform into a pandas dataframe, the add-in will create a python file in the workbook's directory. The VBA code will translate the cell range into the necessary pandas arguments:
+
+* io *\[File Name\]*
+* sheet\_name
+* skiprows *\[Number of lines to skip (int) at the start of the file\]*
+* usecols *\[Excel column letters and column ranges (e.g. “A:E”)\]*
+* nrows *\[Number of rows to parse\]*
+
+[Demo of 'Create Pandas Dataframe' Button](https://i.redd.it/1aclg7d4aqf71.gif)
+
+Perhaps this add-in might be also helpful to you. I also added some other neat features into the add-in to expand excel capabilities. With the add-in, you can add images to Excel comments, transform text to checkboxes, easily create Drop Down lists with one click, remove empty & blank spaces from cells, and much more.
+
+Here is the link to the tutorial:
+
+*(The Python-specific part starts at 8:40 min)*
+
+[https://youtu.be/PmJ9rkKGqrI](https://youtu.be/PmJ9rkKGqrI)
+
+You can download the add-in for free here.
+
+[https://pythonandvba.com/mytoolbelt](https://pythonandvba.com/mytoolbelt)
+
+It would be great if you could share your feedback with me. Any suggestions regarding additional features or improvements? Please let me know :) **Enjoy!**"
+18b5bsg,Will Pandas have streaming in Future??,"As Pandas has switched to arrow backend from version 2.0, is there a possibility that we can see Lazy Evaluation or streaming in Pandas so that we'll be able to process datasets larger than memory on a machine as we have in Polars??"
+18676xd,"What's up Python? New args syntax, subinterpreters FastAPI and cuda pandas…",
+1dqm1y4,Atollas - a column level type system for pandas,"Hey folks!
+
+I do a lot of stuff professionally with pandas and dask, and I always *reeeeaaaly* wish that they had a column level type system. I feel like a lot of bugs like, one-to-one joins on non unique columns, or just plain old incorrect source data would be quicker to find if there was one.
+
+So I've written one - or at least started to. It's pretty early stage, but I'm pretty excited about it as an idea. Would love some feedback people (especially ones that work with pandas a lot)!
+
+[So here's my little project, hope it's interesting to someone!](https://github.com/benrutter/atollas)
+
+
+## What my Project Does
+
+Provides a column level type system for pandas, to catch bugs earlier and check for things like, join operation validity.
+
+## Target Audience
+
+People looking to put pandas code into production with better reliability that pandas provides out the box.
+
+## Comparison
+
+I don't know of any 1-2-1 comparison, things like polars have good type checking internally, but don't make any attempt to type check columns. Pandera is the closest project, which gives a decorator to enforce schemas at type boundaries)
+"
+187l96b,Using Polars in a Pandas world,
+12n0wfk,I discovered that the fastest way to create a Pandas DataFrame from a CSV file is to actually use Polars,
+12m2gn8,How do you guys handle pandas and its sh*tty data type inference,"I often like to dump CSVs with 100s of columns and millions of rows into python pandas. and I find it very very frustrating when it gets various data types for columns wrong. nothing helps
+
+including `infer_objects().dtypes` and `convert_dtypes().dtypes`
+
+how do you guys auto-detect dtypes for your columns?
+
+is there a better library out there ?"
+1bt4w6z,How to parallelize Pandas with Modin,"Discover the power of Modin in overcoming the performance bottlenecks of Pandas. We'll walk you through how a simple switch can reduce your waiting times and make your workflow smooth and speedy, all without leaving the comfort of Pandas behind.
+
+Modin is an active  open source project. Take a look to this blog post to see if it is applicable for your code: [https://dchigarev.github.io/modin_perf_examples/](https://dchigarev.github.io/modin_perf_examples/)"
+1cedln6,I made an easy and secure data lake for Pandas,"**What My Project Does** Shoots is essentially a ""data lake"" where you can easily store pandas dataframes, and retrieve them later or from different locations or in different tools. Shoots has a client and a server. After choosing a place to run the server, you can easily use the client to ""put"" and ""get"" dataframes. Shoots supports SQL, allowing you to put very large dataframes, and then use a query to only get a subset. Shoots also allows you to resample on the server.
+
+
+```python
+# put a dataframe, uploads it to the server  
+df = pd.read\_csv('sensor\_data.csv')  
+shoots.put(""sensor\_data"", dataframe=df, mode=PutMode.REPLACE)  
+
+
+# retrieve the whole data frame  
+df0 = shoots.get(""sensor\_data"")  
+print(df0)  
+
+# or use sql to retrieve just some of the data  
+sql = 'select ""Sensor\_1"" from sensor\_data where ""Sensor\_2"" < .2'  
+df1 = shoots.get(""sensor\_data"", sql=sql)
+```
+
+**Target Audience** Shoots is designed to be used in production by data scientists and other python devs using pandas. The server is configurable to run in various settings, including locally on a laptop if desired. It is useful for anyone who wants to share dataframes, or store dataframes so they can be easily accessed from different sources.
+
+**Comparison** To my knowledge, Shoots is the only data lake with a client that is 100% pandas native. The get() method returns pandas dataframes natively, so there is no cumbersome translations such as required from typical databases and data lakes. The server is build on top of Apache Arrow Flight, and is very efficient with storage because it uses Parquet as the storage format natively. While the Shoots client does all of the heavy listing, if desired, the server can be accessed with any Apache Flight client library, so other languages are supported by the server.
+
+**Get Shoots**
+There is full documentation available in the Github repo: https://github.com/rickspencer3/shoots
+
+It is packaged for Pypi as well: (https://pypi.org/project/shoots/) ```pip install shoots"""
+1c5b5ky,Using Pandas 2 and different datetime erros,"Hey Folks,
+
+I am working on a project that uses a bit old pandas version (1.5.3). I am trying to update it and use a more recent version (2.2.2). Its the first time I use pandas 2 btw. I simply ran all my unit tests and got multiple and different errors all concerning some datetime aspects. I tried troubleshooting by searching the errors and look in pandas release note but I find really complicated. It feels like the documentation is really exhaustive but I could really use a note on principal errors one can get switching to pandas 2.
+
+Does anyone have any handy blogpost, article, documentation that specifies this ? My focus is mainly on datetime errors when differences computed or comparaisons
+
+&#x200B;
+
+Thanks"
+1c34vk8,Pandas - value replacement or interpolation,"Hi all, here trying to replace values for a range of dates in a data frame copy I've made where DateTime is the index and the values I need to mass replace are in the 'Value' column.
+
+The reason why is I need to interpolate between two dates in a time series, where the data I have is incorrect due to measurement error.  I need to replace it with interpolated data to make a more representative data set for forecasting
+
+Can anyone advise? 
+"
+13yrcl9,"Python for Finance: Pandas Resample, Groupby, and Rolling",
+11eqczv,🐼 Pandas 2.0 Up To 32x Faster,
+1b2qb5d,"Pandopt, basicaly pandas, but optimized","# Pandas is Great, But...
+
+Pandas excels when your dataset is manageable in size, and you adhere strictly to its built-in functions. However, when either of these conditions is not met, performance drastically declines. Relying solely on custom, albeit user-friendly, built-in functions for decent performance seems suboptimal. Despite this, for many operations, learning an array of built-ins isn't necessary; you can accomplish a great deal using just a few key methods like `apply`, `aggregate`, `groupby`, and `rolling` (not addressing I/O here). However, the apply is known to be one of the worst in terms of performance, that's why I wanted to make it the best..!
+
+Nonetheless, pandas shines for several reasons, including its user-friendly API and widespread adoption.
+
+## Why I'm Skeptical of Alternatives
+
+In the quest for better performance, you might consider options like Modin or Polars. However, my experience with them has been mixed: they either introduce a steep learning curve or fail to function in 90% of the environments I've tested.
+
+## The Essence of Pandopt
+
+Pandopt aims to enhance basic pandas operations, such as `apply` and `rolling`, by implementing dynamic code transformation and JIT compilation via Numba. This approach significantly boosts performance without altering other aspects of pandas functionality.
+
+## Target Audience
+
+This message is intended for data science enthusiasts, optimization fans, and those who appreciate elegant coding.
+
+## Performance Comparison
+
+Pandopt dramatically outperforms pandas in executing `apply` functions on large datasets (over 1 million rows), offering speed improvements of approximately 10,000 to 20,000 times post-initial compilation (which is cached). Even for standard operations like `sum`, it outpaces numpy or Polars by roughly 8 times. While gains in `rolling` functions are less pronounced, Pandopt still enhances flexibility, allowing the application of custom functions across multiple columns and functions natively.
+
+Project is public on git and available on Pypi even if unstable: [https://github.com/remigenet/pandopt](https://github.com/remigenet/pandopt)"
+zs4kau,Get rid of SettingWithCopyWarning in pandas with Copy on Write,"Hi,
+
+I am a member of the pandas core team (phofl on github). We are currently working on a new feature called Copy on Write. It is designed to get rid of all the inconsistencies in indexing operations. The feature is still actively developed. We would love to get feedback and general thoughts on this, since it will be a pretty substantial change. I wrote a post showing some different forms of behavior in indexing operations and how Copy on Write impacts them:
+
+https://towardsdatascience.com/a-solution-for-inconsistencies-in-indexing-operations-in-pandas-b76e10719744
+
+Happy to have a discussion here or on medium."
+1bpdzfp,Load Apple's .numbers Files into Pandas,"I recently ran into some challenges while trying to work with Apple's .numbers files on Linux. After a bit of experimentation, I figured out a workflow that simplifies the process. If you're planning to use .numbers files and need to load them into pandas, I've created a tutorial that covers the required dependencies and the steps to follow: <https://nezhar.com/blog/load-apple-numbers-files-python-pandas-using-containers/>.
+
+Has anyone else here worked with .numbers files in Python? I’d love to hear about your experiences or any tips you might have."
+104wqfg,Modern Polars: an extensive side-by-side comparison of Polars and Pandas,
+zrhnq1,Alternative to Pandas,"Hi guys! Hope everybody is okay
+
+Talking about data analysis using Python, is there another option excluding Pandas?
+
+Excel sheet will be the data resource"
+ts5mmf,I made a video about efficient memory use in pandas dataframes!,
+165neyy,What's the point for Pandas and Numpy,"I'm going through a Datacamp Python course which details the use of Numpy and Pandas; you know loading and converting a csv file into datframes,comparing lists etc
+
+What I noticed is that you can do all the same by using SQL and much easier too. nowadays it's even easier to load a csv into say sqlite or duckdb and then do your processing there.
+
+I'm not a data scientist but a database developer so probably I'm looking at it from that perspective.
+
+So when to use SQL and when to go with those python libraries?"
